@@ -2,7 +2,7 @@ import time
 import Adafruit_CharLCD as LCD
 import RPi.GPIO as GPIO
 
-##BUTON KODLAR ##
+##BUTTON##
 btn1 = 21
 btn2 = 20
 btn3 = 16
@@ -11,7 +11,7 @@ btn5 = 19
 btn6 = 13
 btn7 = 6
 btn8 = 5
-##!!BUTON KODLAR##
+##!!BUTTON##
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup (4, GPIO.OUT)
@@ -27,7 +27,7 @@ GPIO.setup(btn8, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 p = GPIO.PWM(4,50)
 
-##LCD AYARLARI
+##LCD CONFIG
 lcd_rs        = 25 
 lcd_en        = 24
 lcd_d4        = 23
@@ -41,7 +41,7 @@ lcd_rows = 2
 
 lcd = LCD.Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7,
                            lcd_columns, lcd_rows, lcd_backlight)
-##!!LCD AYARLARI##
+##!!LCD CONFIG##
 
 def pushingBtn():
     if GPIO.input(btn1):
