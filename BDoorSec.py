@@ -63,19 +63,6 @@ def pushingBtn():
     else: 
         return 0
 
-#lcd.clear()
-  #p.ChangeDutyCycle(7.5) 
-  #lcd.message('90 derece...')
-  #time.sleep(2)
-  #lcd.clear()
-  #p.ChangeDutyCycle(12.5) 
-  #lcd.message('180 derece...')
-  #time.sleep(2)
-  #lcd.clear()
-  #p.ChangeDutyCycle(2.5) 
-  #lcd.message('0 derece...')
-  #time.sleep(2)
-
 p.start(12.5)
 sifre = ''
 gercekSifre = ''
